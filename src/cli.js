@@ -6,9 +6,8 @@ function whatIsYourName() {
 }
 
 function getAwswer() {
-    const answer = readlineSync.question('Your answer: ');
-    return answer;
+  const answer = readlineSync.question('Your answer: ');
+  return answer;
 }
 
-
-export { whatIsYourName, getAwswer }
+export { whatIsYourName, getAwswer };
