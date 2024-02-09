@@ -1,0 +1,32 @@
+#!/usr/bin/env node
+import { getAwswer } from '../src/cli.js';
+import greeting from './brain-games.js';
+
+
+function isEven(number) {
+    return Number(number) % 2 === 0;
+}
+
+function games() {
+    const name = greeting();
+    console.log('Answer "yes" if the number is even, otherwise answer "no".');
+    let correnctAnswer = 0;
+    while (correnctAnswer < 3) {
+        let randomNumber = Math.floor(Math.random() * 100);
+        console.log('Question:', randomNumber);
+        const answer = getAwswer() === 'yes' ? true : false;
+        if (isEven(randomNumber) === answer) {
+            correnctAnswer += 1;
+            console.log('Correct!');
+        } else {
+            console.log(`'yes' is wrong answer ;(. Correct answer was 'no'.`);
+            console.log(`Let's try again, ${name}!`);
+            return
+        }
+    }
+
+    console.log(`Congratulations, ${name}!`);
+}
+
+games();
+

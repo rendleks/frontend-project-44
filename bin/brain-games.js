@@ -1,6 +1,11 @@
 #!/usr/bin/env node
-import answer from '../src/cli.js';
+import { whatIsYourName } from '../src/cli.js';
 
-console.log('Welcome to the Brain Games!');
-const name = answer();
-console.log(`Hello, ${name}!`);
+
+export default function greeting() {
+    console.log('Welcome to the Brain Games!');
+    const name = whatIsYourName();
+    console.log(`Hello, ${name}!`);
+    return name;
+}
+
