@@ -4,7 +4,14 @@ import greeting from './brain-games.js';
 
 
 function isEven(number) {
-    return Number(number) % 2 === 0;
+    let result;
+    if (Number(number) % 2 === 0) {
+        result = 'yes';
+    } else {
+        result = 'no';
+    }
+
+    return result;
 }
 
 function games() {
@@ -14,7 +21,7 @@ function games() {
     while (correnctAnswer < 3) {
         let randomNumber = Math.floor(Math.random() * 100);
         console.log('Question:', randomNumber);
-        const answer = getAwswer() === 'yes' ? true : false;
+        const answer = getAwswer();
         if (isEven(randomNumber) === answer) {
             correnctAnswer += 1;
             console.log('Correct!');
