@@ -2,6 +2,17 @@
 import { getAwswer } from '../src/cli.js';
 import greeting from './brain-games.js';
 
+function nod(num1, num2) {
+  let result;
+  const minNum = num1 > num2 ? num2 : num1;
+  for (let i = 1; i <= minNum; i += 1) {
+    if (num1 % i === 0 && num2 % i === 0) {
+      result = i;
+    }
+  }
+  return result;
+}
+
 function gcd() {
   const name = greeting();
   console.log('Find the greatest common divisor of given numbers.');
@@ -24,17 +35,6 @@ function gcd() {
   }
 
   console.log(`Congratulations, ${name}!`);
-}
-
-function nod(num1, num2) {
-  let result;
-  let minNum = num1 > num2 ? num2 : num1;
-  for (let i = 1; i <= minNum; i++) {
-    if (num1 % i === 0 && num2 % i === 0) {
-      result = i;
-    } 
-  }
-  return result;
 }
 
 gcd();
