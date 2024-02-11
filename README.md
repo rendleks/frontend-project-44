@@ -3,4 +3,15 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/07454dc186c9a53279dd/maintainability)](https://codeclimate.com/github/rendleks/frontend-project-44/maintainability)
 
+## Brain-even
+
 [![asciicast](https://asciinema.org/a/g5ESNU6DPeL0tgvOzTwallJqe.svg)](https://asciinema.org/a/g5ESNU6DPeL0tgvOzTwallJqe)
+
+## Brain-calc
+
+[![asciicast](https://asciinema.org/a/stzDrhKcWloijMyBEzacLNSwS.svg)](https://asciinema.org/a/stzDrhKcWloijMyBEzacLNSwS)
+
+
+## Brain-gcd
+
+[![asciicast](https://asciinema.org/a/Q1AG55hWweXhdbgzNmOH12l1V.svg)](https://asciinema.org/a/Q1AG55hWweXhdbgzNmOH12l1V)
