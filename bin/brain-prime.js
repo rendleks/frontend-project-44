@@ -3,7 +3,7 @@ import { getAwswer } from '../src/cli.js';
 import greeting from './brain-games.js';
 
 function isSimple() {
-  let result = 'yes';
+  const result = 'yes';
   const randomNumber = Math.floor(Math.random() * 100);
   if (randomNumber === 1 || randomNumber === 4) {
     return { randomNumber, result: 'no' };
@@ -13,7 +13,7 @@ function isSimple() {
       return { randomNumber, result: 'no' };
     }
   }
-  
+
   return { randomNumber, result };
 }
 
@@ -34,7 +34,7 @@ function primeGame() {
       return;
     }
   }
-  
+
   console.log(`Congratulations, ${name}!`);
 }
 
