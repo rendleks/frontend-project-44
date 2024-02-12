@@ -21,7 +21,7 @@ function progressionGame() {
 
   while (correnctCountAnswer < 3) {
     const randomNum1 = Math.floor(Math.random() * 50);
-    const randomNum2 = Math.floor(Math.random() * 50);
+    const randomNum2 = Math.floor(Math.random() * 10);
     const numberSequence = progression(randomNum1, randomNum2);
     console.log('Question:', numberSequence.result.join(' '));
     const answer = Number(getAwswer());
