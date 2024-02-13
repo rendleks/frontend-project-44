@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-import { getAwswer } from '../src/cli.js';
-import greeting from './brain-games.js';
+import { getAwswer, greeting } from '../src/cli.js';
+
 
 function isEven(number) {
   let result;

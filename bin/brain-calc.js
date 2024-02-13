@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-import { getAwswer } from '../src/cli.js';
-import greeting from './brain-games.js';
+import { getAwswer, greeting } from '../src/cli.js';
+
 
 function expressionEvaluation(num1, num2, operator) {
   let result;
