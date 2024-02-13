@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 import { getAwswer, greeting } from '../src/cli.js';
 
-
 function isEven(number) {
   let result;
   if (Number(number) % 2 === 0) {
